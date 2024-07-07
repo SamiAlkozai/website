@@ -1,3 +1,6 @@
+/* styles.css */
+
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -73,4 +76,64 @@ section#showcase p {
 .content {
     padding: 20px;
     background: #fff;
-    border: #
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery .image {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.gallery .image img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
